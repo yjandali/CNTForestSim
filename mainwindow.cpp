@@ -27,7 +27,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QFile file;
     file.setFileName(fileName);
-    //QFile file(fileName);
     if (file.open(QIODevice::ReadWrite)) {
         qDebug() << "File opened!\n";
         QTextStream stream(&file);
